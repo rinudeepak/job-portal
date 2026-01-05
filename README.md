@@ -1,86 +1,34 @@
-# 🧑‍💼 Job Portal – Skill-Based Hiring System
+# Job Portal Application
 
-A PHP & MySQL based job portal that automates hiring using **resume analysis**, **GitHub skill mapping**, and **technical scoring**.
+A PHP-based Job Portal system with skill scoring, GitHub integration, and recruiter review workflow.
 
----
+## Features
+- Candidate job application with resume upload
+- Resume skill extraction (PDF parsing)
+- GitHub profile analysis (repos, commits, languages)
+- Automatic skill scoring & shortlisting
+- Technical & HR review workflow
+- Recruiter dashboard with job-wise summaries
 
-## 📌 Features Overview
+## Tech Stack
+- PHP (MVC architecture)
+- MySQL
+- Bootstrap
+- GitHub REST API
+- Smalot PDF Parser
 
-### 3.1 User & Job Management
-**Candidates**
-- Signup & Login
-- Upload resume (PDF)
-- Add/view skills
-- View jobs
-- Apply for jobs
+## User Roles
+- Candidate
+- Recruiter
 
-**Recruiters**
-- Signup & Login
-- Post job openings
-- View applicants
+## Status Workflow
+Applied → Shortlisted → Tech Reviewed → HR Reviewed → Selected / Rejected
 
----
-
-### 3.2 Resume, GitHub & LinkedIn Skill Mapping
-- Extract skills from uploaded resumes
-- Fetch GitHub profile data:
-  - Public repositories
-  - Programming languages used
-  - Activity level
-- Map extracted skills with job-required skills
-
----
-
-### 3.3 Technical Skill Score
-A **technical skill score** is calculated using GitHub & resume data.
-
-**Scoring Logic**
-- More repositories → higher score
-- More commits → higher score
-- More programming languages → higher score
-- Resume skill match → bonus score
-
----
-
-### 3.4 Hiring Funnel Automation
-Candidates automatically move through hiring stages based on skill score.
-
-**Hiring Stages**
-1. Applied  
-2. Shortlisted  
-3. Technical Checked  
-4. HR Checked  
-5. Selected  
-
-**Automation Rule**
-- Skill score determines current stage
-- Status updates automatically after evaluation
-
----
-
-## 🛠 Tech Stack
-- **Backend:** PHP (Core PHP, MVC structure)
-- **Database:** MySQL
-- **Frontend:** HTML, CSS, Bootstrap
-- **API:** GitHub REST API
-- **Server:** XAMPP
-
----
-
-## 📂 Database Tables
-- users
-- jobs
-- applications
-- resumes
-- skills
-
----
-
-## 🚀 How to Run the Project
+## Setup Instructions
 1. Clone the repository
-2. Import the database SQL file
-3. Configure database credentials
-4. Start Apache & MySQL (XAMPP)
-5. Open the project in browser
+2. Import database SQL
+3. Configure `db.php`
+4. Run using XAMPP or similar server
 
-
+## Author
+Rinu George
