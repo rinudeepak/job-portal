@@ -29,8 +29,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['upload_resume'])) {
 
                 mysqli_query($conn, $sql);
                 $success = "Resume uploaded successfully";
-
                 
+                
+
             } else {
                 $error = "Upload failed. Try again.";
             }

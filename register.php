@@ -64,7 +64,7 @@ $error =$controller->register();
                                             </div>
 
                                             <!-- Github Username (Candidate only) -->
-                                            <div class="form-floating mb-3" style="display:none;">
+                                            <div class="form-floating mb-3" id="githubDiv" style="display:none;">
                                                 <input class="form-control" name="github_username" type="text" placeholder="Github Username" />
                                                 <label>Github Username</label>
                                             </div>
@@ -95,7 +95,7 @@ $error =$controller->register();
                                         </form>
                                     </div>
                                     <div class="card-footer text-center py-3">
-                                        <div class="small"><a href="login.php">Have an account? Go to login</a></div>
+                                        <div class="small"><a href="index.php">Have an account? Go to login</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -125,6 +125,8 @@ $error =$controller->register();
                 let role = document.getElementById('role').value;
                 document.getElementById('companyDiv').style.display =
                     role === 'recruiter' ? 'block' : 'none';
+                document.getElementById('githubDiv').style.display =
+                    role === 'candidate' ? 'block' : 'none';
             }
         </script>
         
